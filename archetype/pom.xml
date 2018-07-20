@@ -7,6 +7,12 @@
 	<version>5.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Liferay Faces Bridge Ext Archetypes</name>
+	<scm>
+		<connection>scm:git:https://github.com/liferay/liferay-faces-bridge-ext</connection>
+		<developerConnection>scm:git:https://github.com/liferay/liferay-faces-bridge-ext</developerConnection>
+		<url>scm:git:https://github.com/liferay/liferay-faces-bridge-ext</url>
+		<tag>HEAD</tag>
+	</scm>
 
 	<modules>
 		<module>alloy-portlet</module>
@@ -50,6 +56,7 @@
 			<plugin>
 				<artifactId>maven-deploy-plugin</artifactId>
 				<version>2.7</version>
+				<inherited>false</inherited>
 				<configuration>
 					<skip>true</skip>
 				</configuration>
@@ -57,6 +64,7 @@
 			<plugin>
 				<artifactId>maven-install-plugin</artifactId>
 				<version>2.5.2</version>
+				<inherited>false</inherited>
 				<configuration>
 					<skip>true</skip>
 				</configuration>
@@ -64,6 +72,7 @@
 			<plugin>
 				<artifactId>maven-release-plugin</artifactId>
 				<version>2.5.1</version>
+				<inherited>false</inherited>
 				<configuration>
 					<skip>true</skip>
 				</configuration>
